@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <li style="list-style:none">
+        'Welcome!'
+        {% if id %}
+            {{ id }}
+        {% endif %}
+    </li><br>
+
+    <form action="/signin">
+        <input type="submit" value="signin">
+    </form>
+    <form action="/signup">
+        <input type="submit" value="signup">
+    </form>
+        {% if signup_error %}
+            <script>
+                alert('already exist id');
+            </script>
+        {% endif %}
+
+        {% if signup_success %}
+            <script>
+                alert('signup complete!!');
+            </script>
+        {% endif %}
+</body>
+</html>
