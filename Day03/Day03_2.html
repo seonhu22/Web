@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <script>
+        function receive_form(form){
+            var expr = eval(form.expr.value);
+            alert(expr);
+        }
+
+        function test(){
+            alert('Calculating Program!!');
+        }
+    </script>
+</head>
+<body onload="test()">
+    <form action="#" name="cal" onsubmit="receive_form(this)">
+        <label>
+            Enter expr: <input type="text" placeholder="Enter here" name="expr">
+        </label>
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
