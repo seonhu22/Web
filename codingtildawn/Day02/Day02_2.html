@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        #header {
+            #width:100%;
+            #height:50px;
+            background-color:yellow;
+            flex:1;
+        }
+
+        #navigation {
+            #width:100%;
+            #height:50px;
+            background-color:red;
+            flex:1;
+        }
+
+        #contents{
+            #height:500px;
+            display:flex;
+            flex:5;
+            flex-direction:row;
+        }
+
+        #aside_left {
+            #width:20%;
+            #height:inherit;
+            background-color:grey;
+            #float:left;
+            flex:1;
+        }
+
+        #mid_section {
+            #width: 60%;
+            #height: inherit;
+            background-color: blue;
+            #float: left;
+            flex:3;
+        }
+
+        #aside_right {
+            #width: 20%;
+            #height: inherit;
+            background-color: gray;
+            #float: left;
+            flex:1;
+        }
+
+        #footer {
+            #witdh: 100%;
+            #height: 50px;
+            background-color: #00d8ff;
+            flex:1;
+        }
+
+        #container {
+            display:flex;
+            flex-direction:column;
+            #justify-content:stretch;
+            height:100vh;
+        }
+    </style>
+</head>
+<body>
+<div id = 'container'>
+    <div id = 'header'>This is header</div>
+    <div id = 'navigation'>This is navigation bar</div>
+    <div id = 'contents'>
+        <div id = 'aside_left'>aside bar</div>
+        <div id = 'mid_section'>section There are more content here</div>
+        <div id = 'aside_right'>aside bar</div>
+    </div>
+    <div id = 'footer'>footer</div>
+</div>
+</body>
+</html>
